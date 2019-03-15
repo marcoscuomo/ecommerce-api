@@ -1,0 +1,9 @@
+CREATE TABLE usuario(
+	id_usuario BIGINT(20) PRIMARY KEY AUTO_INCREMENT,
+	email VARCHAR(50) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    cpf VARCHAR(11) NOT NULL,
+    tipo_usuario BIGINT(20) NOT NULL,
+    data_cadastro TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    tkn_reinicializacao_senha VARCHAR(255)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
